@@ -26,11 +26,11 @@
           <div class="card info-card sales-card">
 
             <div class="card-body">
-              <h5 class="card-title">Kelas Android</h5>
+              <h5 class="card-title">Kelas IT</h5>
 
               <div class="d-flex align-items-center">
                 <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                  <i class="bi bi-cart"></i>
+                  <i class="bi bi-robot"></i>
                 </div>
                 <div class="ps-3">
                   <h6>{{ $kelas_android }}</h6>
@@ -50,11 +50,11 @@
 
               <div class="d-flex align-items-center">
                 <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                  <i class="bi bi-cart"></i>
+                  <i class="bi bi-rocket-takeoff"></i>
                 </div>
                 <div class="ps-3">
-                  <h6>{{ $kelastahfidz }}</h6>
-                  <span class="text-muted small pt-2 ps-1">Ustadzah</span>
+                  <h6>{{ $tahfidz }}</h6>
+                  <span class="text-muted small pt-2 ps-1">Kelas Tahfidz</span>
 
                 </div>
               </div>
@@ -66,15 +66,35 @@
           <div class="card info-card sales-card">
 
             <div class="card-body">
-              <h5 class="card-title">Kelas Tahfidz</h5>
+              <h5 class="card-title">Data Santri</h5>
 
               <div class="d-flex align-items-center">
                 <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                  <i class="bi bi-cart"></i>
+                  <i class="bi bi-person-hearts"></i>
                 </div>
                 <div class="ps-3">
-                  <h6>1</h6>
-                  <span class="text-muted small pt-2 ps-1">Kelas</span>
+                  <h6>{{ $santri }}</h6>
+                  <span class="text-muted small pt-2 ps-1">Santri</span>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-xxl-4 col-md-4">
+          <div class="card info-card sales-card">
+
+            <div class="card-body">
+              <h5 class="card-title">Data Ustadzah</h5>
+
+              <div class="d-flex align-items-center">
+                <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                  <i class="bi bi-person-heart"></i>
+                </div>
+                <div class="ps-3">
+                  <h6>{{ $kelastahfidz }}</h6>
+                  <span class="text-muted small pt-2 ps-1">Ustadzah</span>
 
                 </div>
               </div>

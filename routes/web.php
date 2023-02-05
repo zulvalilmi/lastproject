@@ -30,6 +30,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::controller(LandingController::class)->group(function (){
   Route::get('/', 'index')->name('landing');
+  Route::get('/react', 'react')->name('react');
 });
 
 Auth::routes();
@@ -95,3 +96,4 @@ Route::prefix('/first')->middleware(['auth', 'isUstadzah'])->group(function(){
           Route::get('/parents', 'index')->name('parents');
       });
   });
+
