@@ -34,13 +34,13 @@ class SetoranController extends Controller
         // dd($request->all());
 
         Setoran::create([
-            'santri_id'       => $request->santri_id,
-            'tahfidz_id'           => $request->tahfidz_id,
-            'surat_ziyadah'          => $request->surat_ziyadah,
+            'santri_id'             => $request->santri_id,
+            'tahfidz_id'            => $request->tahfidz_id,
+            'surat_ziyadah'         => $request->surat_ziyadah,
             'ayat_ziyadah'          => $request->ayat_ziyadah,
-            'surat_murojaah'          => $request->surat_murojaah,
-            'ayat_murojaah'          => $request->ayat_murojaah,
-            'total_hafalan'          => $request->total_hafalan,
+            'surat_murojaah'        => $request->surat_murojaah,
+            'ayat_murojaah'         => $request->ayat_murojaah,
+            'total_hafalan'         => $request->total_hafalan,
         ]);
 
 

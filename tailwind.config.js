@@ -7,7 +7,17 @@ module.exports = {
         './resources/js/**/*.jsx',
   ],
   theme: {
-    extend: {},
+    extend: {
+      dropShadow: {
+        "3xl": "0 20px 13px rgba(86, 5, 5, 0.35)",
+      },
+      fontFamily:{
+        'sans' :['Rubik'],
+      },
+      colors: {
+        'default' : '#C76C97',
+      }
+    },
   },
   plugins: [],
 }
