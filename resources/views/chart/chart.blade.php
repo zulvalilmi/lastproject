@@ -4,6 +4,17 @@
 
 @section('content')
 
+<div class="pagetitle">
+    <h1>{{ $tahfidz->nama_tahfidz }}</h1>
+    <nav>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ route('dashboard')}}">Dashboard</a></li>
+            <li class="breadcrumb-item active">Chart Kelas Tahfidz {{ $tahfidz->nama_tahfidz }}</li>
+        </ol>
+    </nav>
+</div>
+<!-- End Page Title -->
+
 <div class="card">
     <div class="card-body">
         <!-- Line Chart -->
@@ -55,11 +66,10 @@
                 }).render();
             });
         </script>
-        // <!-- End Line Chart -->
+        <!-- End Line Chart -->
 
     </div>
 </div>
-    
-// line chart
+
 
 @endsection

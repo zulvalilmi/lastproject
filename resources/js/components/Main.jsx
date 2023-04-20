@@ -42,7 +42,7 @@ export default function Main() {
           to record all your memorization. With experienced tahfidz teachers in their fields. 
           continue to improve your memorization in tahfidzku
           </div>
-          <a href="/login" className="py-4 px-16 bg-default rounded-md text-white drop-shadow-3xl">
+          <a href="/login" className="py-4 px-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-md text-white drop-shadow-3xl">
             Get Started
           </a>
           </div>

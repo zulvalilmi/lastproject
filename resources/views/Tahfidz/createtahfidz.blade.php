@@ -1,6 +1,6 @@
 @extends('template.cover')
 
-@section('title', 'Data Ustadzah Cantik')
+@section('title', 'Tahfidz')
 
 @section('content')
 

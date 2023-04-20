@@ -4,7 +4,7 @@
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Delete Kelas</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
+                    <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
@@ -12,13 +12,13 @@
                     @csrf
                     @method('DELETE')
                     <p class="text-center">Hapus data Ustadzah <strong style="color: red;">{{ $s->name }}</strong> ?</p>
-                    <input type="hidden" name="id" value="{{ $s->id }}">         
+                    <input type="hidden" name="id" value="{{ $s->id }}">
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 <button type="submit" class="btn btn-danger">Delete</button>
             </div>
         </div>
-    </form>
+        </form>
     </div>
 </div>

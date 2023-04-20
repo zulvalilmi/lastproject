@@ -7,8 +7,8 @@ export default function Footer() {
           <div className="flex-1 space-y-5">
             <img src="/front/tahfidzlogo.png" alt="logo" />
             <div>
-              LaslesVPN is a private virtual network that <br />
-              has unique features and has high security.
+              Tahfidzku is a website for record your  <br />
+              memorization quran and made you hafidzah.
             </div>
             <div className="flex flex-row">
               <img src="/front/sosmed/facebook.png" alt="facebook icon" className="w-16 h-16" />
@@ -20,7 +20,7 @@ export default function Footer() {
           <div className="">
             <div className="text-lg font-semibold mb-6">Product</div>
             <ul className="space-y-6 text-sm text-gray-500">
-              <li>Pricing</li>
+              <li>Setoran</li>
               <li>Locations</li>
               <li>Server</li>
               <li>Countries</li>

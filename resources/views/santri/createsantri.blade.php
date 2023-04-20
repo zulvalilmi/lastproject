@@ -22,56 +22,59 @@
     </div>
     <div class="card-body">
 
-<form action="{{ route('santri.store') }}" method="POST" enctype="multipart/form-data">
-    @csrf 
+        <form action="{{ route('santri.store') }}" method="POST" enctype="multipart/form-data">
+            @csrf
 
-    <div class="row mt-3">
-        <div class="col-md-6">
-            <div class="form-group">
-                <label for="name">Nama Santri</label>
-                <input type="text" value="{{old('name')}}" name="name" class="form-control @error('name') is-invalid @enderror" id="name">
-                @error('name')
-                <div class="invalid-feedback">
-                    <strong>{{ $message }}</strong>
-                </div>                            
-                @enderror
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="name">Nama Santri</label>
+                        <input type="text" value="{{old('name')}}" name="name"
+                            class="form-control @error('name') is-invalid @enderror" id="name">
+                        @error('name')
+                        <div class="invalid-feedback">
+                            <strong>{{ $message }}</strong>
+                        </div>
+                        @enderror
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="email">Alamat Email Santri</label>
+                        <input type="text" name="email" value="{{old('email')}}"
+                            class="form-control @error('email') is-invalid @enderror" id="email">
+                        @error('email')
+                        <div class="invalid-feedback">
+                            <strong>{{ $message }}</strong>
+                        </div>
+                        @enderror
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" value="{{old('password')}}"
+                                class="form-control @error('password') is-invalid @enderror" id="password">
+                            @error('password')
+                            <div class="invalid-feedback">
+                                <strong>{{ $message }}</strong>
+                            </div>
+                            @enderror
+                        </div>
+                    </div>
+
+                </div>
             </div>
-        </div>
-        <div class="col-md-6">
-            <div class="form-group">
-                <label for="email">Alamat Email Santri</label>
-                <input type="text" name="email" value="{{old('email')}}" class="form-control @error('email') is-invalid @enderror" id="email">
-                @error('email')
-                <div class="invalid-feedback">
-                    <strong>{{ $message }}</strong>
-                </div>                            
-                @enderror
+
+            <div class="text-left mt-3 mb-3">
+                <button type="submit" class="btn btn-success btn-sm">Save</button>
             </div>
-        </div>
 
-        <div class="row mt-3">
-        <div class="col-md-6">
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" name="password" value="{{old('password')}}" class="form-control @error('password') is-invalid @enderror" id="password">
-                @error('password')
-                <div class="invalid-feedback">
-                    <strong>{{ $message }}</strong>
-                </div>                            
-                @enderror
-            </div>
-        </div>
-        
-    </div>
+        </form>
+
     </div>
 
-    <div class="text-left mt-3 mb-3">
-        <button type="submit" class="btn btn-success btn-sm">Save</button>
-    </div>
-    
-</form>
 
-</div>
-
-
-@endsection
+    @endsection

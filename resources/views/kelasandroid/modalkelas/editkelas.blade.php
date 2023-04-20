@@ -1,6 +1,6 @@
-
 <!-- Modal -->
-<div class="modal fade" id="edit{{ $k->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="edit{{ $k->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -15,7 +15,8 @@
                     @method('PUT')
                     <div class="form-group">
                         <label for="nama_kelas">Edit Kelas</label>
-                        <input value="{{ $k->nama_kelas }}" type="text" required name="nama_kelas" class="form-control" id="nama_kelas">
+                        <input value="{{ $k->nama_kelas }}" type="text" required name="nama_kelas" class="form-control"
+                            id="nama_kelas">
                         <input type="hidden" name="id" value="{{ $k->id }}">
                     </div>
             </div>

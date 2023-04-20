@@ -45,7 +45,8 @@
                     <tr>
                         <td>{{ $ustadzah->name }}</td>
                         <td>
-                            <a href="#delete{{ $ustadzah->id }}" type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#delete{{ $ustadzah->id }}">
+                            <a href="#delete{{ $ustadzah->id }}" type="button" class="btn btn-danger"
+                                data-bs-toggle="modal" data-bs-target="#delete{{ $ustadzah->id }}">
                                 <i class="bi bi-trash"></i>
                                 delete
                             </a>

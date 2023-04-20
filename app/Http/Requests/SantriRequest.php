@@ -34,8 +34,8 @@ class SantriRequest extends FormRequest
     {
         return [
 
-            'name.required'      => 'Masukkan Nama Ustadzahnya !',
-            'email.required'     => 'Masukkan email ustadzah !',
+            'name.required'      => 'Masukkan Nama Santrinya !',
+            'email.required'     => 'Masukkan email Santri !',
             'email.unique'       => 'Email yang ini sudah terdaftar!',
             'password.required'  => 'Masukkan Passwornya minimal 8 yaa !',
         ];

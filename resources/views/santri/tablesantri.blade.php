@@ -45,11 +45,12 @@
                     <tr>
                         <td>{{ $s->name }}</td>
                         <td>
-                            <a href="#delete{{ $s->id }}" type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#delete{{ $s->id }}">
+                            <a href="#delete{{ $s->id }}" type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                data-bs-target="#delete{{ $s->id }}">
                                 <i class="bi bi-trash"></i>
                                 delete
                             </a>
-                            @include('santri.deletesantri') 
+                            @include('santri.deletesantri')
                             @endforeach
                         </td>
 

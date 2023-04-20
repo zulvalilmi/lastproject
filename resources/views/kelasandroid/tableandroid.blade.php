@@ -47,11 +47,13 @@
                         <td>{{ $k->nama_kelas }}</td>
                         <td>{{ $k->slug }}</td>
                         <td>
-                            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#edit{{ $k->id }}">
+                            <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                data-bs-target="#edit{{ $k->id }}">
                                 <i class="bi bi-pencil-square"></i>
                                 edit
                             </button>
-                            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#delete{{ $k->id }}">
+                            <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                data-bs-target="#delete{{ $k->id }}">
                                 <i class="bi bi-trash"></i>
                                 delete
                             </button>
